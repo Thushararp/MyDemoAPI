@@ -1,4 +1,8 @@
-﻿namespace MyDemoAPI.Extensions
+﻿using Service;
+using Service.Contracts;
+using System.Runtime.CompilerServices;
+
+namespace MyDemoAPI.Extensions
 {
     public static class ServiceExtensions
     {
@@ -18,6 +22,11 @@
             services.Configure<IISOptions>(options =>
             {
             });
+        }
+
+        public static void ConfigureServices(this IServiceCollection services)
+        {
+            services.AddScoped<IStarRezGameService, StarRezGameService>();
         }
     }
 }

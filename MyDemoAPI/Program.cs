@@ -11,6 +11,7 @@ namespace MyDemoAPI
             // Add services to the container.
             builder.Services.ConfigureCors();
             builder.Services.ConfigureIISIntegration();
+            builder.Services.ConfigureServices();
             builder.Services.AddControllers()
                 .AddApplicationPart(typeof(MyDemoAPI.APIControllers.AssemblyReference).Assembly);
 

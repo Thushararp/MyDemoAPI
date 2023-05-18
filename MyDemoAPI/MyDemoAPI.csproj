@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyDemoAPI.APIControllers\MyDemoAPI.APIControllers.csproj" />
+    <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 
 </Project>
